@@ -5,11 +5,14 @@
   line-height: 100%;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  outline: 1px solid lime;
+  /* outline: 1px solid lime; */
 }
 :root {
   --fondo: rgba(19,20,25,1);
   --texto: rgba(255,255,255,1);
+  --texto-2: rgba(240,0,46,1);
+  --texto-3: rgba(227,181,5,1);
+
 }
 /* nav ------------------------------ */
 nav header {
@@ -49,3 +52,101 @@ nav footer a {
   opacity: 1;
 }
 /* nav ------------------------------ */
+/* main------------------------------ */
+main {
+  height: calc(100vh - 72px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+main p {
+  /* padding: 20px; */
+  /* padding-right: 20px;
+  padding-left: 20px; */
+  display: flex;
+  flex-direction: column;
+}
+main p :nth-child(1){
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+main span {
+  padding-bottom: 20px;
+  font-size: 3em;
+  text-align: center;
+  line-height: 150%;
+  font-weight: bold;
+}
+main button {
+  padding: 10px;
+  background-color: var(--fondo);
+  color: var(--texto);
+  border: 2px solid transparent;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+main button:hover {
+  background-color: var(--texto);
+  color: var(--fondo);
+  border: 2px solid var(--fondo);
+}
+
+/* main------------------------------ */
+
+/* hr------------------------------- */
+hr {
+  color: var(--texto);
+  width: calc(100% - 40px);
+  margin: auto;
+}
+/* hr------------------------------- */
+
+/* h-------------------------------- */
+h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+  padding: 20px;
+  text-align: center;
+  color: var(--texto-3);
+}
+h3 {
+  color: var(--texto-2);
+  font-size: 1.5em;
+  text-transform: uppercase;
+  padding: 10px;
+  text-align: center;
+}
+/* h-------------------------------- */
+/* Section-------------------------- */
+section {
+  background-color: var(--fondo);
+  color: var(--texto);
+}
+/* Section-------------------------- */
+
+/* article ------------------------- */
+article {
+  display: flex;
+  flex-direction: column;
+}
+article i {
+  font-size: 4em !important;
+  padding: 40px;
+  text-align: center;
+  color: var(--texto-2);
+}
+article p {
+  padding: 20px;
+  text-align: center;
+}
+article a {
+  text-align: center;
+}
+article a i {
+  color: var(--texto);
+}
+/* article ------------------------- */
