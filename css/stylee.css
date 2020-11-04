@@ -30,6 +30,7 @@ nav a {
 }
 nav i {
   font-size: 2em !important;
+  cursor: pointer;
 }
 nav footer {
   position: absolute;
@@ -62,9 +63,6 @@ main {
   padding-left: 20px;
 }
 main p {
-  /* padding: 20px; */
-  /* padding-right: 20px;
-  padding-left: 20px; */
   display: flex;
   flex-direction: column;
 }
@@ -94,7 +92,6 @@ main button:hover {
   color: var(--fondo);
   border: 2px solid var(--fondo);
 }
-
 /* main------------------------------ */
 
 /* hr------------------------------- */
@@ -121,6 +118,7 @@ h3 {
   text-align: center;
 }
 /* h-------------------------------- */
+
 /* Section-------------------------- */
 section {
   background-color: var(--fondo);
@@ -128,25 +126,54 @@ section {
 }
 /* Section-------------------------- */
 
-/* article ------------------------- */
-article {
+/* Services ------------------------ */
+#services article {
   display: flex;
   flex-direction: column;
 }
-article i {
+#services article i {
   font-size: 4em !important;
   padding: 40px;
   text-align: center;
   color: var(--texto-2);
 }
-article p {
+#services article p {
   padding: 20px;
   text-align: center;
 }
-article a {
+#services article a {
   text-align: center;
 }
-article a i {
+#services article a i {
   color: var(--texto);
 }
-/* article ------------------------- */
+/* Services ------------------------ */
+
+/* portfolio------------------------ */
+#portfolio figure {
+  padding: 20px;
+  height: 100vh;
+  /* width: ; */
+  /* background-color: lime; */
+}
+#portfolio img {
+  object-fit: cover;
+  max-width: 100%;
+  height: 70%;
+  padding-bottom: 20px;
+}
+#portfolio figcaption {
+  display: flex;
+  flex-direction: column;
+}
+#portfolio figcaption :nth-child(1) {
+  font-size: 1em;
+  padding-bottom: 20px;
+  text-align: center;
+
+}
+#portfolio figcaption span {
+  font-size: 1.5em;
+}
+/* portfolio------------------------ */
+
