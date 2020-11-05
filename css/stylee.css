@@ -5,7 +5,7 @@
   line-height: 100%;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  /* outline: 1px solid lime; */
+  outline: 1px solid lime;
 }
 :root {
   --fondo: rgba(19,20,25,1);
@@ -45,6 +45,7 @@ nav footer {
 }
 nav footer a {
   padding: 20px;
+  transition: all 0.2s ease;
   
 }
 .visibility-visible {
@@ -85,6 +86,7 @@ main button {
   border-radius: 20px;
   transition: all 0.2s ease;
   cursor: pointer;
+  outline: none;
 }
 main button:hover {
   background-color: var(--texto);
@@ -144,6 +146,8 @@ section {
   text-align: center;
 }
 #services article a i {
+  transition: all 0.2s ease;
+
   color: var(--texto);
 }
 /* Services ------------------------ */
@@ -210,5 +214,84 @@ section {
   padding: 0 10px 0px 10px;
 }
 /* team ---------------------------- */
+@media only screen and (min-width: 730px) {
+  /* nav--------------------------- */
+  #btn-nav {
+    display: none;
+  }
+  nav footer {
+    top: 0;
+    right: 0;
+    width: 80%;
+    flex-direction: row;
+    justify-content: flex-end;
+    visibility: visible;
+    opacity: 1;
+  }
+  nav footer a:hover {
+    color: var(--texto-3);
+  }
+  /* nav--------------------------- */
+  /* main-------------------------- */
+  main {
+    height: calc(100vh - 56px);
+    justify-content: flex-start;
+  }
+  main p {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+  main span {
+    text-align: start;
+    font-size: 4.5em;
+    line-height: 120%;
+  }
+  main button {
+    padding: 20px;
+    font-weight: bold;
+    width: 200px;
+    border-radius: 100px;
+  }
+  main button:active {
+    border: 2px solid transparent;
+  }
+  /* main-------------------------- */
+  hr {
+    display: none;
+  }
+  /* section------------------------ */
+  section {
+    padding-top: 72px;
+    display: flex;
+    flex-direction: row;
+  }
+  /* section------------------------ */
+  /* h2----------------------------- */
+  h2 {
+    margin-top: -72px;
+    position: absolute;
+    width: 100%;
+  }
+  /* h2----------------------------- */
+
+  /* services---------------------- */
+  #services article {
+    height: calc(100vh - 72px);
+    justify-content: space-around;
+  }
+  #services article a i:hover {
+    color: var(--texto-3);
+  }
+  #services article p {
+    font-size: 1.5em;
+  }
+  /* services---------------------- */
+  /* team ------------------------- */
+  #team {
+    justify-content: center;
+  }
+  /* team ------------------------- */
+}
 
 
