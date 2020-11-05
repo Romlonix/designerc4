@@ -5,7 +5,7 @@
   line-height: 100%;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  outline: 1px solid lime;
+  /* outline: 1px solid lime; */
 }
 :root {
   --fondo: rgba(19,20,25,1);
